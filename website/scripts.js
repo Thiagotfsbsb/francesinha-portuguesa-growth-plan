@@ -1,36 +1,50 @@
 // scripts.js
 
-// Scroll suave para navegação
+// Scroll suave para links internos
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
-  });
 });
 
-// Toggle para menu mobile (se adicionarmos futuramente)
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
+// Mostrar botão "Voltar ao Topo" quando rolar
+const backToTopButton = document.getElementById('back-to-top');
 
-if (menuToggle && navMenu) {
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-  });
-}
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
 
-// Efeito de fade-in nos elementos ao rolar
-const fadeElems = document.querySelectorAll(".fade-in");
+// Voltar ao topo ao clicar no botão
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("visible");
-    observer.unobserve(entry.target);
-  });
+// Animações leves ao aparecer seções
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
 }, {
-  threshold: 0.2
+    threshold: 0.2
 });
 
-fadeElems.forEach(el => appearOnScroll.observe(el));
+document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+});
+
+console.log('Francesinha Portuguesa - Site interativo e carregado!');
