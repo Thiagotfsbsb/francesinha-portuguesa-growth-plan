@@ -43,6 +43,13 @@ const observer = new IntersectionObserver(entries => {
     threshold: 0.2
 });
 
+function setLanguage(lang) {
+  document.querySelectorAll('.lang-section').forEach(section => {
+    section.classList.add('hidden');
+  });
+  document.getElementById(lang).classList.remove('hidden');
+}
+
 document.querySelectorAll('.section').forEach(section => {
     observer.observe(section);
 });
