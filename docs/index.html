@@ -1,68 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Francesinha Portuguesa</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Francesinha Portuguesa – Growth Plan</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="scripts.js"></script>
 </head>
 <body>
-  <div class="language-switch">
-  <a href="index.html">🇵🇹 Português</a> |
-  <a href="index-en.html">🇺🇸 English</a>
-</div>
-  <header class="hero">
-    <img src="assets/logo.png" alt="Logo do Restaurante">
-    <h1>Francesinha Portuguesa</h1>
-    <p class="slogan">"A melhor francesinha, o melhor snack, o melhor espaço, em Braga. Uma casa portuguesa, #comcerteza!"</p>
+  <header>
+    <img src="../assets/logo.png" alt="Restaurant Logo" class="logo"/>
+    <div class="language-switch">
+      <button onclick="setLanguage('pt')">🇵🇹 Português</button>
+      <button onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
   </header>
 
   <main>
-    <section class="sobre">
-      <h2>Sobre o Restaurante</h2>
-      <p>Localizado no coração da cidade, o Francesinha Portuguesa celebra a tradição gastronômica com pratos típicos e ambiente acolhedor. Nossa missão é oferecer uma experiência autêntica com qualidade e carinho em cada detalhe.</p>
-    </section>
+    <section id="pt" class="lang-section">
+      <h1>É uma casa portuguesa, com certeza.</h1>
+      <p>Bem-vindo ao projeto de crescimento do restaurante Francesinha Portuguesa. Aqui você encontrará os planos estratégicos e de marketing desenvolvidos para elevar a marca, atrair novos clientes e consolidar sua presença na região.</p>
 
-    <section class="diferenciais">
-      <h2>Diferenciais</h2>
+      <h2>📈 Visão Estratégica</h2>
+      <p>Fortalecer a imagem do restaurante como referência de cozinha tradicional portuguesa, com foco em experiências autênticas e atendimento de excelência.</p>
+
+      <h2>📣 Plano de Marketing</h2>
       <ul>
-        <li>Receitas tradicionais com toque contemporâneo</li>
-        <li>Atendimento familiar e acolhedor</li>
-        <li>Ambiente rústico e confortável</li>
-        <li>Francesinhas artesanais com molhos exclusivos</li>
+        <li>Presença ativa no Instagram e Facebook</li>
+        <li>Criação de conteúdo visual atrativo</li>
+        <li>Campanhas locais e parcerias com empresas próximas</li>
+      </ul>
+
+      <h2>📁 Documentos</h2>
+      <ul>
+        <li><a href="../PLANO_ESTRATEGICO_FRANCESINHA_PORTUGUESA.pdf" target="_blank">Plano Estratégico (PDF)</a></li>
+        <li><a href="../PLANO_MARKETING_FRANCESINHA_PORTUGUESA.pdf" target="_blank">Plano de Marketing (PDF)</a></li>
+      </ul>
+
+      <h2>📸 Galeria</h2>
+      <img src="../assets/menu.jpg" alt="Menu" class="gallery"/>
+
+      <h2>📞 Contato</h2>
+      <p>Siga-nos nas redes sociais:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/francesinha_portugesa/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/francesinha_portugesa/" target="_blank">Facebook</a></li>
       </ul>
     </section>
 
-    <section class="estrategia">
-      <h2>Plano Estratégico</h2>
-      <p>Estamos em transição de um modelo de almoços tradicionais para uma proposta mais voltada à carta, priorizando pratos exclusivos e foco no atendimento noturno e de fim de semana. Mantemos a diária por fidelidade aos clientes antigos e otimização de recursos internos.</p>
-    </section>
+    <section id="en" class="lang-section hidden">
+      <h1>It's a Portuguese home, for sure.</h1>
+      <p>Welcome to the growth project of the Francesinha Portuguesa restaurant. Here you will find the strategic and marketing plans designed to elevate the brand, attract new customers, and consolidate its presence in the region.</p>
 
-    <section class="marketing">
-      <h2>Marketing e Visibilidade</h2>
-      <p>Implementação de um plano de marketing com foco em presença digital, reformulação das redes sociais, estratégias de conteúdo, parcerias locais e otimização visual. Facebook e Instagram como canais principais.</p>
-    </section>
+      <h2>📈 Strategic Vision</h2>
+      <p>To strengthen the restaurant’s image as a reference for traditional Portuguese cuisine, focused on authentic experiences and excellent service.</p>
 
-    <section class="galeria">
-      <h2>Galeria</h2>
-      <div class="fotos">
-        <img src="../assets/menu.jpg" alt="Foto do menu" />
-        <!-- Outras imagens podem ser adicionadas aqui -->
-      </div>
-    </section>
-
-    <section class="contato">
-      <h2>Contato</h2>
-      <p>Siga-nos nas redes sociais:</p>
+      <h2>📣 Marketing Plan</h2>
       <ul>
-        <li><a href="https://www.instagram.com/francesinha_portuguesa/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com/afrancesinhaportuguesa/">Facebook</a></li>
+        <li>Active presence on Instagram and Facebook</li>
+        <li>Creation of attractive visual content</li>
+        <li>Local campaigns and partnerships with nearby companies</li>
+      </ul>
+
+      <h2>📁 Documents</h2>
+      <ul>
+        <li><a href="../PLANO_ESTRATEGICO_FRANCESINHA_PORTUGUESA.pdf" target="_blank">Strategic Plan (PDF)</a></li>
+        <li><a href="../PLANO_MARKETING_FRANCESINHA_PORTUGUESA.pdf" target="_blank">Marketing Plan (PDF)</a></li>
+      </ul>
+
+      <h2>📸 Gallery</h2>
+      <img src="../assets/menu.jpg" alt="Menu" class="gallery"/>
+
+      <h2>📞 Contact</h2>
+      <p>Follow us on social media:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/francesinha_portugesa/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/francesinha_portugesa/" target="_blank">Facebook</a></li>
       </ul>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Francesinha Portuguesa. Todos os direitos reservados.</p>
-  </footer>
 </body>
 </html>
