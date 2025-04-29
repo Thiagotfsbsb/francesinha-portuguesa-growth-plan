@@ -124,3 +124,7 @@ footer {
     transform: translateY(30px);
 }
 
+.hidden {
+  display: none;
+}
+
