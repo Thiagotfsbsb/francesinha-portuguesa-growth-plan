@@ -12,11 +12,11 @@ This repository was created to document and present a comprehensive business dev
 - Increasing revenue sustainably
 
 ## 📂 Repository Structure
-
+```plaintext
 francesinha-portuguesa-growth-plan/
 ├── README.md
-├── PLANO_ESTRATEGICO_FRANCESINHA_PORTUGUESA.pdf
-├── PLANO_MARKETING_FRANCESINHA_PORTUGUESA.pdf
+├── STRATEGIC_PLAN_FRANCESINHA_PORTUGUESA.pdf
+├── MARKETING_PLAN_FRANCESINHA_PORTUGUESA.pdf
 ├── assets/
 │   └── logo.png
 ├── docs/
@@ -81,11 +81,11 @@ O objetivo deste projeto é apresentar soluções reais para um restaurante fís
 > 🎯 Projeto aplicável como case de consultoria, portfólio ou referência para negócios do setor alimentar.
 
 ## 📂 Estrutura do Repositório
-
+```plaintext
 francesinha-portuguesa-growth-plan/
 ├── README.md
-├── PLANO_ESTRATEGICO_FRANCESINHA_PORTUGUESA.pdf
-├── PLANO_MARKETING_FRANCESINHA_PORTUGUESA.pdf
+├── STRATEGIC_PLAN_FRANCESINHA_PORTUGUESA.pdf
+├── MARKETING_PLAN_FRANCESINHA_PORTUGUESA.pdf
 ├── assets/
 │   └── logo.png
 ├── docs/
