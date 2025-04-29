@@ -13,3 +13,33 @@ O objetivo deste projeto é apresentar soluções reais para um restaurante fís
 > 🎯 Projeto aplicável como case de consultoria, portfólio ou referência para negócios do setor alimentar.
 
 ## 📂 Estrutura do Repositório
+
+francesinha-portuguesa-growth-plan/
+├── README.md
+├── PLANO_ESTRATEGICO_FRANCESINHA_PORTUGUESA.pdf
+├── PLANO_MARKETING_FRANCESINHA_PORTUGUESA.pdf
+├── assets/
+│   └── logo.png
+├── docs/
+│   ├── index.html
+│   ├── style.css
+│   └── scripts.js
+
+## 🌐 Visualização do Projeto
+
+Acesse a landing page com design minimalista e responsivo:  
+🔗 [Ver Projeto Online](https://thiagotfsbsb.github.io/francesinha-portuguesa-growth-plan/)
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**, **CSS3** e **JavaScript**
+- **GitHub Pages** para hospedagem
+- **Git** para versionamento
+- **Figma** para planejamento visual e estruturação
+
+## 📌 Autor
+
+**Thiago F.**  
+Profissional de TI e negócios, com experiência internacional e foco em projetos estratégicos, inovação e branding digital.
+
+---
